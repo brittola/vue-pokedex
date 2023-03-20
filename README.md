@@ -1,5 +1,16 @@
-# pokedex
+# Pokédex
+---
+O projeto foi criado para praticar alguns conceitos básicos do Vue.js, como:
+- Métodos, componentes e props
+- Data binding e Two way data binding
+- Computed properties
+- V-for
 
+No projeto, consumo a API do pokedex.io e crio cards com informativos.
+
+Junto a isso, implementei um sistema de busca por nome do Pokémon.
+
+---
 ## Project setup
 ```
 npm install
@@ -9,16 +20,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
