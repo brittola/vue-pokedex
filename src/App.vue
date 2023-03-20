@@ -8,7 +8,7 @@
         <Pokemon
           :name="poke.name[0].toUpperCase() + poke.name.slice(1)"
           :url="poke.url"
-          :num="poke.url.replace('https://pokeapi.co/api/v2/pokemon/', '').replace('/', '')"
+          :num="getPokeId(poke.url)"
         />
       </div>
     </div>
@@ -37,6 +37,11 @@ export default {
   },
   components: {
     Pokemon,
+  },
+  methods: {
+    getPokeId: function(url) {
+      return url.replace('https://pokeapi.co/api/v2/pokemon/', '').replace('/', '');
+    }
   },
   computed: {
     searchResult: function() {
